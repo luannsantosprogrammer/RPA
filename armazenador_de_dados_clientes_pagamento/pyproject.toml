@@ -1,0 +1,22 @@
+[project]
+name = "armazenador-de-dados-clientes-pagamento"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pdfplumber",
+    "pandas",
+    "playwright>=1.62.0",
+    "pyautogui>=0.9.54",
+    "mss>=10.2.0",
+    "opencv-python>=5.0.0.93",
+    "notify-py>=0.3.43",
+]
+
+[project.scripts]
+armazenador-de-dados-clientes-pagamento = "armazenador_de_dados_clientes_pagamento:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

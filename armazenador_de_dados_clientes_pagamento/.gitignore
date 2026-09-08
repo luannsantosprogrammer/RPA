@@ -1,0 +1,16 @@
+# Ambientes Virtuais e Cache Python
+.venv/
+__pycache__/
+*.pyc
+.python-version
+
+# Dados de Sessão e Perfis de Navegador
+user_gmail/
+
+# Dados Gerados/Saídas locais
+Downloads/
+*.csv
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store
