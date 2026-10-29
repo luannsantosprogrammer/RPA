@@ -1,0 +1,21 @@
+[project]
+name = "busca-de-vagas"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "luannsantosprogrammer", email = "luannrodrigodesouzasantos@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "playwright>=1.64.1",
+    "pywhatkit>=5.4",
+    "schedule>=1.2.2",
+]
+
+[project.scripts]
+busca-de-vagas = "busca_de_vagas:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
