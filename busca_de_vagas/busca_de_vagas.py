@@ -16,6 +16,11 @@ def rastreio_de_vagas():
         page1 = navegador.pages[0]
         page1.goto("https://www.linkedin.com/jobs/search-results/")
         page1.wait_for_timeout(5000)
+
+        if page1.url == "https://www.linkedin.com/home":
+            print("Faça seu login e depois volte para o terminal e aperte enter:\n")
+            input()
+
         tag_a = page1.locator("a")
         contagem = tag_a.count()
         print(contagem)
@@ -55,6 +60,5 @@ def rastreio_de_vagas():
 schedule.every().hour.do(rastreio_de_vagas)
 
 while True:
-    input("Faça seu login e depois volte para o terminal e aperte enter:\n")
     schedule.run_pending()
     time.sleep(1)
