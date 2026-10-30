@@ -55,9 +55,9 @@ def rastreio_de_vagas():
         Olá, temos novas vagas:
         {"\n".join(vagas)}
     '''
-    kit.sendwhatmsg_instantly("", texto)
+    kit.sendwhatmsg_instantly("", texto, 30, True)
 
-schedule.every().hour.do(rastreio_de_vagas)
+schedule.every().day.at("12:00").do(rastreio_de_vagas)
 
 while True:
     schedule.run_pending()

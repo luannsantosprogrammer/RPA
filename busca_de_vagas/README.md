@@ -8,7 +8,7 @@ Um script de automação que monitora o LinkedIn em busca de novas vagas e envia
 
 O script abre o LinkedIn usando uma sessão persistente do navegador (ou seja, se você já tiver logado antes, ele lembra do login), navega até a aba de vagas, clica em "Exibir todas" pra expandir a listagem e percorre cada uma das vagas disponíveis. Para cada vaga encontrada, ele captura o título e o link direto, e no final manda tudo num texto via WhatsApp usando o `pywhatkit`.
 
-Esse ciclo se repete automaticamente a cada hora enquanto o script estiver rodando.
+Esse ciclo se repete automaticamente todos os dias as 12:00.
 
 ---
 
